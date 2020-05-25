@@ -1,5 +1,8 @@
 import React from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
+import Login from './components/Login'
+import Signup from './components/Signup'
 import './App.css';
 
 class App extends React.Component {
@@ -45,8 +48,8 @@ class App extends React.Component {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path='/login' component={}/>
-          <Route exact path='/signup' component={}/>
+          <Route exact path='/login' component={Login}/>
+          <Route exact path='/signup' component={Signup}/>
         </Switch>
       </Router>
     );
