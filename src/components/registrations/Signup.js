@@ -43,6 +43,7 @@ class Signup extends Component {
       })
       .catch((error) => console.log("api errors:", error));
   };
+
   redirect = () => {
     this.props.history.push("/");
   };
