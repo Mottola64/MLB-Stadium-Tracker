@@ -1,4 +1,5 @@
 import React from "react";
+import {connect} from 'react-redux'
 
 class Stadium extends React.Component {
   render() {
@@ -6,4 +7,4 @@ class Stadium extends React.Component {
   }
 }
 
-export default Stadium;
+export default connect(mapStateToProps, () )(Stadium)
